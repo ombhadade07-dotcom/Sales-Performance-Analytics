@@ -1,0 +1,13 @@
+shipping_id,ship_mode,order_priority
+1,First Class,High
+2,Second Class,Critical
+3,First Class,Medium
+4,Same Day,Critical
+5,First Class,Critical
+6,Standard Class,High
+7,Standard Class,Low
+8,Second Class,High
+9,Standard Class,Medium
+10,Second Class,Medium
+11,Same Day,High
+12,Same Day,Medium

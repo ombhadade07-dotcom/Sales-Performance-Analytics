@@ -1,0 +1,12 @@
+INSERT INTO shipping (shipping_id, ship_mode, order_priority) VALUES ('1', 'First Class', 'High');
+INSERT INTO shipping (shipping_id, ship_mode, order_priority) VALUES ('2', 'Second Class', 'Critical');
+INSERT INTO shipping (shipping_id, ship_mode, order_priority) VALUES ('3', 'First Class', 'Medium');
+INSERT INTO shipping (shipping_id, ship_mode, order_priority) VALUES ('4', 'Same Day', 'Critical');
+INSERT INTO shipping (shipping_id, ship_mode, order_priority) VALUES ('5', 'First Class', 'Critical');
+INSERT INTO shipping (shipping_id, ship_mode, order_priority) VALUES ('6', 'Standard Class', 'High');
+INSERT INTO shipping (shipping_id, ship_mode, order_priority) VALUES ('7', 'Standard Class', 'Low');
+INSERT INTO shipping (shipping_id, ship_mode, order_priority) VALUES ('8', 'Second Class', 'High');
+INSERT INTO shipping (shipping_id, ship_mode, order_priority) VALUES ('9', 'Standard Class', 'Medium');
+INSERT INTO shipping (shipping_id, ship_mode, order_priority) VALUES ('10', 'Second Class', 'Medium');
+INSERT INTO shipping (shipping_id, ship_mode, order_priority) VALUES ('11', 'Same Day', 'High');
+INSERT INTO shipping (shipping_id, ship_mode, order_priority) VALUES ('12', 'Same Day', 'Medium');
