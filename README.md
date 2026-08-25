@@ -161,18 +161,49 @@ The model used:
 The final model performed better than the baseline Linear Regression and
 Random Forest models.
 
+## Database & SQL Analysis
+
+The cleaned dataset was also modeled as a relational database to
+demonstrate SQL-based analysis alongside the Python workflow.
+
+- `Python/ETL.py.py` splits the cleaned data into five normalized
+  tables: `customers`, `products`, `locations`, `shipping`, `orders`
+- `Python/generate_sql_files.py` generates `INSERT` statements for
+  each table from the split CSVs
+- `SQL/Tables.sql` creates the schema, including foreign keys tying
+  `orders` back to the other four tables
+- `SQL/sales_analysis.sql` contains the analytical queries (sales
+  and profit by category, top products, monthly trend, running
+  cumulative sales, product ranking within category, and shipping
+  cost analysis), reproducing the notebook's key findings in SQL
+
 ## Project Structure
 
 ```text
-Sales Performance Analytics/
+Sales-Performance-Analytics/
 │
 ├── Dataset/
-│   ├── raw_sales.csv
+│   ├── global_superstore_2016.xlsx
 │   └── cleaned_sales.csv
 │
-├── Notebook/
-│   └── Sales_Analysis_and_Forecasting.ipynb
+├── Database/
+│   ├── customers.csv / products.csv / locations.csv
+│   ├── shipping.csv / orders.csv
+│   └── insert_*.sql
 │
+├── SQL/
+│   ├── Tables.sql
+│   └── sales_analysis.sql
+│
+├── Python/
+│   ├── ETL.py
+│   ├── create_insert_sql.py
+│   └── generate_sql_files.py
+│
+├── Notebook/
+│   └── Sales_Data_Analysis_and_Forecasting.ipynb
+│
+├── Sales_Performance_Analytics_Report.pdf
 ├── README.md
 │
 └── requirements.txt
